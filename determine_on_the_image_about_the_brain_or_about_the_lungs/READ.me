@@ -1,0 +1,16 @@
+Модель решает задачу отнести скан к скану мозга или к скану легких
+
+Скан мозгов брал здесь https://www.kaggle.com/datasets/darren2020/ct-to-mri-cgan 
+Cкан легих брал тут https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+
+в папке Brains и Lungs скачаные сеты
+preproc_makedata.ipynb - создание данных на вход(x_all.npy) и выход(y_all.npy) 
+0 - легкие
+1 - мозг
+search.ipynb - построение модели
+
+Модели:
+modelv1_noname - произвольная модель на 7 эпохах acс = 0.9874
+modelv1_noname_v2 - modelv1_nonameна 5 эпохах acс = 0.9889 
+    Лучший порог:0.6455790400505066 
+    Лучшая точность:0.9937007874015747
