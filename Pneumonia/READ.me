@@ -1,15 +1,19 @@
 Модель решает задачу нахождения легких пораженных пневмонией
 
-данные взяты от сюда https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+данные взяты от сюда 
+https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset - только легкие с нормальными показателями
 preproc_makedata.ipynb - создание данных на вход(x_all.npy) и выход(y_all.npy) 
 0 - легкие
 1 - мозг
 search.ipynb - построение модели
 
 Модели:
-https://disk.yandex.com/d/Qn6DPDKtXPvDpw
+ https://disk.yandex.com/d/Qn6DPDKtXPvDpw
 model_pneumonia_v1 - произвольная модель на 25 эпохах acс = 0.7436
 Лучший порог:0.9892129898071289 Лучшая точность:0.8108974358974359
-https://disk.yandex.com/d/aznEKrok4ao_sQ
+ https://disk.yandex.com/d/aznEKrok4ao_sQ
 model_pneumonia_v2 - модель model_pneumonia_v1 на 8 эпохах acс = 0.7676 
 Лучший порог:0.6788942217826843 Лучший accuracy_score:0.7868589743589743
+ https://drive.google.com/drive/folders/1hnGYgbIIZDKT381GHLbYzJfgdjWMGhqc?usp=share_link
+model_densenet121peumonia_1_v2 - модель построеная на известной DnseNet121 с точностью 0.8782
