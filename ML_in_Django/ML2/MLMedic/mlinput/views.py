@@ -56,10 +56,10 @@ def answer_heartattack(request):
         else:
             x_quest.append(int(r_get[i]))
 
-    with open("MlMedic/mlinput/ml_models/IM_knn_model.sav", "rb") as f:
+    with open("mlinput/ml_models/IM_knn_model.sav", "rb") as f:
         knn = pickle.load(f)
 
-    with open("MlMedic/mlinput/ml_models/IM_catboost_model.sav", "rb") as f:
+    with open("mlinput/ml_models/IM_catboost_model.sav", "rb") as f:
         catb = pickle.load(f)
 
     print([x_quest])
@@ -149,7 +149,7 @@ def answer_lungcancer(request):
         else:
             x_quest.append(int(r_get[i]))
 
-    with open("MlMedic/mlinput/ml_models/model_cancer_from_oleg.pkl", "rb") as f:
+    with open("mlinput/ml_models/model_cancer_from_oleg.pkl", "rb") as f:
         random_forest_model = pickle.load(f)
 
 
